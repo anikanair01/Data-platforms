@@ -21,6 +21,7 @@ def decrypt_message(encrypted_message: str, key: str) -> str:
 
 # Example usage:
 if __name__ == "__main__":
+
     key = generate_key()
     print(f"Generated Key: {key}")
 
