@@ -1,7 +1,7 @@
 import os
 import snowflake.connector
 from dotenv import load_dotenv
-from snowflake.connector.errors import Error
+
 load_dotenv()
 
 def get_snowflake_connection():

@@ -33,6 +33,19 @@ def ingest_to_bronze(csv_path, bronze_table_name):
 
 # Example usage
 if __name__ == "__main__":
-    csv_path = "C:/Users/anika.nair/Desktop/Vaccinations.csv"
-    bronze_table_name = "BRONZE_LAYER_DATA"
-    ingest_to_bronze(csv_path, bronze_table_name)
+
+ csv_path1 = "C:/Users/anika.nair/Desktop/Raw Covid data/Vaccinations.csv"
+ ingest_to_bronze(csv_path1, "BRONZE_VACCINATIONS")
+
+csv_path2 = "C:/Users/anika.nair/Desktop/Raw Covid data/index.csv"
+ingest_to_bronze(csv_path2, "BRONZE_INDEX")
+
+csv_path3 = "C:/Users/anika.nair/Desktop/Raw Covid data/demographics.csv"
+ingest_to_bronze(csv_path3, "BRONZE_DEMOGRAPHICS")
+
+csv_path4 = "C:/Users/anika.nair/Downloads/epidemiology (3).csv"
+ingest_to_bronze(csv_path4, "BRONZE_EPIDEMIOLOGY")
+
+csv_path5 = "C:/Users/anika.nair/Desktop/Raw Covid data/geography.csv"
+ingest_to_bronze(csv_path5, "BRONZE_GEOGRAPHY")
+

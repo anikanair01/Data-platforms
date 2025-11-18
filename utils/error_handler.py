@@ -7,6 +7,9 @@ class Apperror(Exception):
         self.status_code = status_code
         self.message = message
 
+    def __str__(self) -> str:
+        return self.message
+
 def handle_errors(logger=None):
     """Decorator to handle errors in functions."""
     def decorator(func):
@@ -36,6 +39,7 @@ if __name__ == "__main__":
         if b == 0:
             raise Apperror("Division by zero is not allowed.")
         return a / b
+
 
     # Test the function
     print(divide(10, 5))  # Should print 5.0
