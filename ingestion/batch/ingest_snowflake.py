@@ -49,3 +49,8 @@ ingest_to_bronze(csv_path4, "BRONZE_EPIDEMIOLOGY")
 csv_path5 = "C:/Users/anika.nair/Desktop/Raw Covid data/geography.csv"
 ingest_to_bronze(csv_path5, "BRONZE_GEOGRAPHY")
 
+csv_path6 = "C:/Users/anika.nair/Desktop/Raw Covid data/hospitalizations.csv"
+ingest_to_bronze(csv_path6, "BRONZE_HOSPITALIZATIONS")
+
+
+
